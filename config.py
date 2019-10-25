@@ -71,8 +71,8 @@ os.system('clear')
 ipArray = arr.array('b')
 print("Would you like to scan more than 1 IP Address?")
 x = 0
-response = input("1.Yes\n2.No")
 while x == 0:
+    response = input("1.Yes\n2.No\nPlease enter a choice: ")
     if response == "1" or response == "yes" or response == "Yes":
         ipAddress = ""
         print("ipAddressCount=Yes")
