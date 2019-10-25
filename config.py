@@ -68,7 +68,7 @@ while x == 0:
 
 #Ip Address Count
 os.system('clear')
-ipArray = arr.array('u')
+ipArray = []
 print("Would you like to scan more than 1 IP Address?")
 x = 0
 while x == 0:
