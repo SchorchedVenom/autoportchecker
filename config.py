@@ -37,7 +37,7 @@ while x == 0:
     if response == "1":
         port = 1
         while port < 1024:
-            portArray.append(str(port))
+            portArray.append(int(port))
             port += 1
         portList = portArray.tolist()
         print("portNumbers={}".format(portList),file=configFile)
@@ -45,7 +45,7 @@ while x == 0:
     elif response == "2":
         port = 1
         while port < 65536:
-            portArray.append(str(port))
+            portArray.append(int(port))
             port += 1
         portList = portArray.tolist()
         print("portNumbers={}".format(portList),file=configFile)
@@ -57,7 +57,7 @@ while x == 0:
             os.system('clear')
             port = input("Please enter a port to scan or enter Exit to finish: ")
             if port != "exit" or port != "Exit":
-                portArray.append(str(port))
+                portArray.append(int(port))
             else:
                 portList = portArray.tolist()
                 print("portNumbers={}".format(portList),file=configFile)
@@ -80,7 +80,7 @@ while x == 0:
             os.system('clear')
             ipAddress = input("Please enter a IP to scan or enter Exit to finish: ")
             if ipAddress != "exit" or ipAddress != "Exit":
-                ipArray.append(str(ipAddress))
+                ipArray.append(int(ipAddress))
             else:
                 ipList = ipArray.tolist()
                 ipFile = open("ipaddress.txt", "w")
