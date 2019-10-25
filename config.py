@@ -82,9 +82,8 @@ while x == 0:
             if ipAddress != "99":
                 ipArray.append(str(ipAddress))
             else:
-                ipList = ipArray.tolist()
                 ipFile = open("ipaddress.txt", "w")
-                print("ipAddress={}".format(ipList),file=ipFile)
+                print("ipAddress={}".format(ipArray),file=ipFile)
                 x = 1
                 ipFile.close()
     elif response == "2" or response == "no" or response == "No":
