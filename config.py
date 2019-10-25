@@ -101,7 +101,7 @@ socket.setdefaulttimeout(10)
 for i in ipAddress:
     print ("------{}------".format(i),file=fileOutput)
     targetServer = socket.gethostbyname(i)
-    for port in portNumbers:
+    for port in portList:
         sock = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
         result = sock.connect_ex((targetServer,port))
         if result == 0:
