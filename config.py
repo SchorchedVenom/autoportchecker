@@ -125,7 +125,7 @@ fileOutput.close()
 outPutTransfer = [line.rstrip('\n') for line in open("./{}".format(fileOutputFile))]
 initOutput = open("init_scan.txt", "w")
 for line in outPutTransfer:
-    print("{}".format(i),file=ininitOutput)
+    print("{}".format(i),file=initOutput)
 initOutput.close()
 
 #Create Cronfile
