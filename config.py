@@ -76,10 +76,10 @@ while x == 0:
     if response == "1" or response == "yes" or response == "Yes":
         ipAddress = ""
         print("ipAddressCount=Yes")
-        while ipAddress != "exit" or ipAddress != "Exit":
+        while ipAddress != "99":
             os.system('clear')
-            ipAddress = input("Please enter a IP to scan or enter Exit to finish: ")
-            if ipAddress != "exit" or ipAddress != "Exit":
+            ipAddress = input("Please enter a IP to scan or enter 99 to finish: ")
+            if ipAddress != "99":
                 ipArray.append(str(ipAddress))
             else:
                 ipList = ipArray.tolist()
