@@ -68,7 +68,7 @@ while x == 0:
 
 #Ip Address Count
 os.system('clear')
-ipArray = arr.array('i')
+ipArray = arr.array('b')
 print("Would you like to scan more than 1 IP Address?")
 x = 0
 response = input("1.Yes\n2.No")
@@ -80,7 +80,7 @@ while x == 0:
             os.system('clear')
             ipAddress = input("Please enter a IP to scan or enter Exit to finish: ")
             if ipAddress != "exit" or ipAddress != "Exit":
-                ipArray.append(int(ipAddress))
+                ipArray.append(str(ipAddress))
             else:
                 ipList = ipArray.tolist()
                 ipFile = open("ipaddress.txt", "w")
